@@ -1,0 +1,49 @@
+{
+  "connection": "default",
+  "collectionName": "veranstaltung",
+  "info": {
+    "name": "event",
+    "description": "Veranstaltungen von Sites"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "type": "string"
+    },
+    "teaser": {
+      "required": true,
+      "type": "string"
+    },
+    "beginning": {
+      "required": true,
+      "type": "date"
+    },
+    "end": {
+      "type": "date"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "events",
+      "dominant": true
+    },
+    "accesslevel": {
+      "model": "accesslevel"
+    },
+    "location": {
+      "model": "location",
+      "via": "events"
+    },
+    "interested": {
+      "collection": "user",
+      "dominant": true,
+      "via": "events",
+      "plugin": "users-permissions"
+    }
+  }
+}

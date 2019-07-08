@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/accesslevels",
+      "handler": "Accesslevel.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accesslevels/count",
+      "handler": "Accesslevel.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accesslevels/:_id",
+      "handler": "Accesslevel.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/accesslevels",
+      "handler": "Accesslevel.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/accesslevels/:_id",
+      "handler": "Accesslevel.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/accesslevels/:_id",
+      "handler": "Accesslevel.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

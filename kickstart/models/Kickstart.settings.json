@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "kickstart",
+  "info": {
+    "name": "kickstart",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "goal": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "donation",
+  "info": {
+    "name": "donation",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    }
+  }
+}

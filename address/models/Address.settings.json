@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "address",
+  "info": {
+    "name": "address",
+    "description": "Anschrift und Kontaktdatein eines Users"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "strasse": {
+      "type": "string"
+    },
+    "land": {
+      "type": "string"
+    },
+    "bundesland": {
+      "type": "string"
+    },
+    "postleitzahl": {
+      "type": "integer"
+    },
+    "website": {
+      "type": "string"
+    },
+    "socialmedia": {
+      "type": "string"
+    }
+  }
+}

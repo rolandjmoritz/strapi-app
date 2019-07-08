@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "kategorie",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "events": {
+      "collection": "event",
+      "via": "categories"
+    },
+    "newsarticles": {
+      "collection": "newsarticle",
+      "via": "categories"
+    },
+    "talks": {
+      "collection": "talk",
+      "via": "categories"
+    },
+    "sites": {
+      "collection": "site",
+      "via": "categories"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/newsarticles",
+      "handler": "Newsarticle.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newsarticles/count",
+      "handler": "Newsarticle.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newsarticles/:_id",
+      "handler": "Newsarticle.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/newsarticles",
+      "handler": "Newsarticle.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/newsarticles/:_id",
+      "handler": "Newsarticle.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/newsarticles/:_id",
+      "handler": "Newsarticle.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

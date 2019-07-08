@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "accesslevel",
+  "info": {
+    "name": "accesslevel",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "accesslevel": {
+      "enum": [
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Platinum"
+      ],
+      "type": "enumeration"
+    }
+  }
+}

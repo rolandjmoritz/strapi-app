@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/commentauthors",
+      "handler": "Commentauthor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commentauthors/count",
+      "handler": "Commentauthor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commentauthors/:_id",
+      "handler": "Commentauthor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/commentauthors",
+      "handler": "Commentauthor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/commentauthors/:_id",
+      "handler": "Commentauthor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/commentauthors/:_id",
+      "handler": "Commentauthor.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

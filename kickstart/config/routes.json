@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kickstarts",
+      "handler": "Kickstart.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kickstarts/count",
+      "handler": "Kickstart.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kickstarts/:_id",
+      "handler": "Kickstart.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kickstarts",
+      "handler": "Kickstart.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kickstarts/:_id",
+      "handler": "Kickstart.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kickstarts/:_id",
+      "handler": "Kickstart.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

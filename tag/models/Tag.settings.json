@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "tag",
+  "info": {
+    "name": "tag",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "newsarticles": {
+      "collection": "newsarticle",
+      "via": "tags"
+    },
+    "talks": {
+      "collection": "talk",
+      "via": "tags"
+    },
+    "sites": {
+      "collection": "site",
+      "via": "tags"
+    }
+  }
+}

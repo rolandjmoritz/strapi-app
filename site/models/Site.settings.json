@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "site",
+  "info": {
+    "name": "site",
+    "description": "Site einer Organisation/Mediums/Firma/Person"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "timestamp": {
+      "required": true,
+      "type": "date"
+    },
+    "address": {
+      "model": "address"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "about": {
+      "type": "text"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "sites",
+      "dominant": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "accesslevel": {
+      "model": "accesslevel"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "sites",
+      "dominant": true
+    }
+  }
+}

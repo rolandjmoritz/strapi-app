@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "kommentar",
+  "info": {
+    "name": "comment",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "date"
+    },
+    "votes": {
+      "model": "vote"
+    },
+    "parent": {
+      "model": "comment"
+    },
+    "author": {
+      "model": "commentauthor",
+      "via": "comments"
+    },
+    "newsarticle": {
+      "model": "newsarticle",
+      "via": "comments"
+    },
+    "review": {
+      "model": "review",
+      "via": "comments"
+    }
+  }
+}

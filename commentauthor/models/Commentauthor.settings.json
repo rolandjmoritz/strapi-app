@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "kommentarautor",
+  "info": {
+    "name": "commentauthor",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "profilbild": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "author"
+    }
+  }
+}

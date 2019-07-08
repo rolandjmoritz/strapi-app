@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "location",
+  "info": {
+    "name": "location",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "events": {
+      "collection": "event",
+      "via": "location"
+    }
+  }
+}

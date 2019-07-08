@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "review",
+  "info": {
+    "name": "review",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "type": "string"
+    },
+    "content": {
+      "required": true,
+      "type": "text"
+    },
+    "timestamp": {
+      "type": "date"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "review"
+    }
+  }
+}

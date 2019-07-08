@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "vote",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "up": {
+      "type": "integer",
+      "default": "0",
+      "required": true
+    },
+    "down": {
+      "type": "integer",
+      "required": true,
+      "default": "0"
+    }
+  }
+}

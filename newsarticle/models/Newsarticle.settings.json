@@ -1,0 +1,65 @@
+{
+  "connection": "default",
+  "collectionName": "newartikel",
+  "info": {
+    "name": "newsarticle",
+    "description": "Newsartikel einer Site"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "titel": {
+      "required": true,
+      "type": "string"
+    },
+    "teaser": {
+      "required": true,
+      "type": "string"
+    },
+    "typ": {
+      "enum": [
+        "Text",
+        "Video"
+      ],
+      "type": "enumeration"
+    },
+    "inhalt": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "date"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "newsarticles",
+      "dominant": true
+    },
+    "views": {
+      "type": "integer",
+      "default": "0",
+      "required": true
+    },
+    "votes": {
+      "model": "vote"
+    },
+    "accesslevel": {
+      "model": "accesslevel"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "newsarticle"
+    },
+    "tags": {
+      "collection": "tag",
+      "dominant": true,
+      "via": "newsarticles"
+    }
+  }
+}

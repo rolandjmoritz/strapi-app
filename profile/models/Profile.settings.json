@@ -1,0 +1,15 @@
+{
+  "connection": "default",
+  "collectionName": "profil",
+  "info": {
+    "name": "profile",
+    "description": "Profil eines Patronaut-Users"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {}
+}
